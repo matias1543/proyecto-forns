@@ -4,7 +4,7 @@ import Logo from '../assets/PO.jpg'
 export const Navbar = () => {
     return (
         <header className='header'>
-            <nav className='flex flex-jc-sb flex-ai-c'>
+            <nav className='header-container'>
                 <a href="#" className='header-logo'>
                     <img src={Logo} className='header__img' alt="logo" />
                 </a>

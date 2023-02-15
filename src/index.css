@@ -28,37 +28,11 @@ body {
   line-height: 1.3;
 }
 
-.flex {
+.header-container {
   display: flex;
-}
-
-.flex-jc-sb {
   justify-content: space-between;
-}
-
-.flex-jc-c {
-  justify-content: center;
-}
-
-.flex-ai-c {
   align-items: center;
-}
-
-
-/* header start */
-
-nav {
-  padding: 1.7rem 2.4rem;
-}
-
-.button {
-  background-color: var(--dark-blue);
-  padding: 1.6rem 3.5rem;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  font-weight: 400;
-  width: 0.5rem;
+  width: 100%;
 }
 
 .header-logo img {
@@ -66,6 +40,31 @@ nav {
   height: 12.2rem;
 }
 
+nav {
+  padding: 1.7rem 2.4rem;
+}
 
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* header ends */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  padding: 1rem 2rem;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+  width: 20rem;
+  height: 6.5rem;
+  text-align: center;
+}
+
+.button:not(:last-child) {
+  margin-right: 1.5rem;
+}
