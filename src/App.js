@@ -1,10 +1,11 @@
 import React from 'react';
-import { AppLayout } from './layout/AppLayout'
+import { AppLayout } from './layout/AppLayout';
+import { Hero } from './screens/Hero';
 
 export const App = () => {
   return (
     <AppLayout>
-      <div></div>
+      <Hero />
     </AppLayout>
   )
 }
