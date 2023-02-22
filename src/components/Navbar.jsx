@@ -9,11 +9,17 @@ export const Navbar = () => {
                     <img src={Logo} className='header__img' alt="logo" />
                 </a>
 
-                <div className='header-buttons'>
-                    <a href="#" className='button'>Ver todos los precios</a>
-                    <a href="#" className='button'>Otros servicios</a>
-                    <a href="#" className='button'>Consejos para tu instalación</a>
-                    <a href="#" className='button'>Ayuda</a>
+                <a href='#' className='header-burger hide-for-desktop'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <div className='header-buttons hide-for-mobile'>
+                    <a href="#" className='button'><span>Ver todos los precios</span></a>
+                    <a href="#" className='button'><span>Otros servicios</span></a>
+                    <a href="#" className='button'><span>Consejos para tu instalación</span></a>
+                    <a href="#" className='button'><span>Ayuda</span></a>
                 </div>
             </nav>
         </header>
